@@ -16,7 +16,24 @@ header{position:absolute;top:0;left:0;width:100%;z-index:10;border-bottom:1px so
 section{padding:92px 0}.section-kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);font-weight:800}.section-title{font:800 clamp(30px,4vw,48px)/1.1 Manrope;margin:12px 0 14px;letter-spacing:-.04em}.section-lead{color:#bacbe0;line-height:1.75;max-width:690px}.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}.intro-card{padding:30px;border:1px solid #ffffff20;border-radius:24px;background:linear-gradient(145deg,#153d69,#0b2446);box-shadow:0 20px 60px #0003}.big-number{font:800 58px Manrope;color:var(--gold);letter-spacing:-.06em}.intro-card p{color:#c9d9eb;line-height:1.65}.pill-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.pill{padding:9px 13px;border:1px solid #7bd7f74d;border-radius:50px;color:#d9f6ff;font-size:12px}
 .features{background:linear-gradient(180deg,#0a2040,#081a34)}.center{text-align:center}.center .section-lead{margin:0 auto}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}.feature{padding:25px;border:1px solid #ffffff18;border-radius:20px;background:#ffffff08;min-height:190px}.feature .ico{font-size:27px;margin-bottom:16px}.feature h3{margin:0 0 9px;font:700 18px Manrope}.feature p{margin:0;color:#afc3dc;line-height:1.6;font-size:14px}
 .offer{background:radial-gradient(ellipse at 80% 40%,#174a72 0%,#0a2040 48%,#07172f 100%)}.offer-panel{border:1px solid #ffe16a55;background:linear-gradient(115deg,#142e52,#102343);border-radius:28px;padding:38px;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;box-shadow:0 25px 70px #0004}.offer h2{font:800 clamp(30px,4vw,44px)/1.08 Manrope;margin:12px 0}.offer h2 em{font-style:normal;color:var(--gold)}.offer p{color:#c5d6e9;line-height:1.7}.price-card{background:#061831;border:1px solid #ffffff20;border-radius:20px;padding:26px}.price-line{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid #ffffff18;color:#c5d6e9}.price-line strong{color:white}.price-line:last-child{border:0}
-.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}.gallery-card{border-radius:22px;overflow:hidden;background:#10294b;border:1px solid #ffffff1c}.gallery-card img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}.gallery-card div{padding:16px 19px;color:#c4d6e9;font-size:13px}.plan-box{margin-top:34px;padding:18px;border-radius:22px;background:#fff}.plan-box img{width:100%;display:block}.plan-actions{display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap;margin-top:15px;color:#18304e}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:26px}
+.gallery-card{min-width:0;border-radius:22px;overflow:hidden;background:linear-gradient(145deg,#10294b,#0b1e3a);border:1px solid #ffffff20;box-shadow:0 14px 35px #0002;transition:transform .2s,border-color .2s}
+.gallery-card:hover{transform:translateY(-3px);border-color:#28c7f2aa}
+.gallery-card img,.gallery-card video{width:100%;height:300px;display:block;object-fit:cover;background:#071329}
+.gallery-card .media-preview{height:220px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at center,#1c4772,#0b1d38);font-size:58px}
+.gallery-card .media-caption{padding:17px 19px 19px}
+.media-title{font-weight:800;color:#fff;font-size:15px;overflow-wrap:anywhere}
+.media-meta{color:#9eb6d1;font-size:11px;margin-top:6px}
+.media-open{display:inline-flex;margin-top:12px;color:#54d5ff;font-size:12px;font-weight:800;text-decoration:none}
+.gallery-toolbar{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
+.gallery-filter{border:1px solid #ffffff30;background:#0d2342;color:#c7d8ea;padding:9px 15px;border-radius:999px;font-size:12px;cursor:pointer}
+.gallery-filter.active{background:#0aa6d5;border-color:#0aa6d5;color:#06172d;font-weight:800}
+.file-item{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid #ffffff1b}
+.file-item a{color:#e7f4ff;overflow-wrap:anywhere;flex:1;min-width:180px}
+.file-item .file-meta{font-size:11px;color:#9eb6d1}
+.file-item button{border:1px solid #ffffff38;background:#10294b;color:#fff;padding:8px 11px;border-radius:9px;cursor:pointer;font-size:11px}
+.file-item button:hover{border-color:#36c9ef}
+@media(max-width:700px){.gallery-grid{grid-template-columns:1fr}.gallery-card img,.gallery-card video{height:240px}.gallery-card .media-preview{height:180px}}.plan-box{margin-top:34px;padding:18px;border-radius:22px;background:#fff}.plan-box img{width:100%;display:block}.plan-actions{display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap;margin-top:15px;color:#18304e}
 .contact{background:linear-gradient(140deg,#0b2c52,#06152e)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:32px;align-items:start}.contact-info{padding:28px;border-radius:24px;background:#ffffff09;border:1px solid #ffffff1c}.contact-info h3{font:800 24px Manrope;margin:0 0 15px}.phone{display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid #ffffff1a;font-weight:800;font-size:20px}.phone:last-child{border:0}.phone span{font-size:12px;color:#a9bfd8;font-weight:500;display:block}.lead-form{background:#f8fbff;color:#0b1c35;border-radius:24px;padding:30px;box-shadow:0 20px 60px #0003}.lead-form h3{font:800 26px Manrope;margin:0 0 8px}.lead-form>p{color:#63758e;font-size:13px;line-height:1.6}.field{margin-top:15px}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:7px}.field input{width:100%;padding:14px 15px;border:1px solid #d7e0ea;border-radius:12px;background:#fff;color:#10213b;outline:none}.field input:focus{border-color:#0e9ed0;box-shadow:0 0 0 3px #0e9ed01c}.consent{display:flex;gap:9px;align-items:flex-start;font-size:11px;color:#66768a;line-height:1.5;margin:16px 0}.consent input{margin-top:2px}.lead-form .btn{width:100%}.fineprint{font-size:10px;color:#78889c;margin-top:12px;line-height:1.5}
 .admin{background:#071329;border-top:1px solid #ffffff16;padding:40px 0}.admin-toggle{background:transparent;border:1px solid #ffffff35;color:#b9c9df;padding:9px 13px;border-radius:10px;cursor:pointer;font-size:12px}.admin-panel{display:none;margin-top:20px;padding:22px;border:1px solid #ffffff2a;border-radius:18px;background:#0c2141}.admin-panel.open{display:block}.admin-panel p{color:#b5c8de;font-size:13px;line-height:1.6}.upload-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.upload-row input{max-width:100%;color:#dceaff}.file-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-top:18px}.file-item{background:#07172e;border:1px solid #ffffff1b;padding:12px;border-radius:12px;overflow-wrap:anywhere;font-size:12px}.file-item button{margin-top:9px;background:#a91e2b;color:white;border:0;border-radius:8px;padding:7px 10px;cursor:pointer}.file-item a{color:#82dfff}footer{padding:24px 0;background:#041126;color:#8ea5c2;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
 @media(max-width:800px){.links{display:none}.nav{height:70px}.hero{min-height:760px}.intro-grid,.offer-panel,.contact-grid{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr 1fr}.hero-content{padding-top:130px}.offer-panel{padding:25px}.gallery-grid{grid-template-columns:1fr}}
@@ -51,21 +68,47 @@ document.getElementById("year").textContent=new Date().getFullYear();
 const toggle=document.getElementById("adminToggle"),panel=document.getElementById("adminPanel");
 toggle.addEventListener("click",()=>panel.classList.toggle("open"));
 const loginForm=document.getElementById("adminLoginForm"),tools=document.getElementById("adminTools"),message=document.getElementById("adminMessage"),fileInput=document.getElementById("fileInput"),fileList=document.getElementById("fileList"),sharedMedia=document.getElementById("sharedMedia");
+let allFiles=[];
 async function api(url,options={}){const r=await fetch(url,{credentials:"same-origin",...options,headers:{"Content-Type":"application/json",...(options.headers||{})}});const data=await r.json().catch(()=>({}));if(!r.ok)throw new Error(data.error||"Error de conexión");return data}
-function niceSize(n){return n<1048576?Math.round(n/1024)+" KB":(n/1048576).toFixed(1)+" MB"}
+function niceSize(n){return n<1048576?Math.max(1,Math.round(n/1024))+" KB":(n/1048576).toFixed(1)+" MB"}
+function fileName(file){let name=(file.pathname||"material").split("/").pop();name=name.replace(/^\d{10,}-/,"").replace(/-[a-zA-Z0-9]{6,}(?=\.)/,"");return name||"Material del proyecto"}
+function category(file){const t=file.contentType||"";return t.startsWith("image/")?"Fotografías":t.startsWith("video/")?"Videos":t==="application/pdf"?"Planos y PDF":"Documentos"}
+function createMediaCard(file){
+ const card=document.createElement("article");card.className="gallery-card";
+ const type=file.contentType||"",name=fileName(file);
+ if(type.startsWith("image/")){const img=document.createElement("img");img.src=file.url;img.alt=name;img.loading="lazy";card.append(img)}
+ else if(type.startsWith("video/")){const video=document.createElement("video");video.src=file.url;video.controls=true;video.preload="metadata";card.append(video)}
+ else {const preview=document.createElement("div");preview.className="media-preview";preview.textContent=type==="application/pdf"?"📑":"📄";card.append(preview)}
+ const caption=document.createElement("div");caption.className="media-caption";
+ const title=document.createElement("div");title.className="media-title";title.textContent=name;
+ const meta=document.createElement("div");meta.className="media-meta";meta.textContent=category(file)+" · "+niceSize(file.size);
+ const link=document.createElement("a");link.className="media-open";link.href=file.url;link.target="_blank";link.rel="noopener";link.textContent=type.startsWith("image/")?"Ampliar fotografía ↗":type.startsWith("video/")?"Abrir video ↗":"Abrir documento ↗";
+ caption.append(title,meta,link);card.append(caption);return card;
+}
+function renderGallery(filter="Todos"){
+ sharedMedia.innerHTML="";
+ const toolbar=document.createElement("div");toolbar.className="gallery-toolbar";
+ const filters=["Todos","Fotografías","Videos","Planos y PDF","Documentos"];
+ filters.forEach(label=>{const b=document.createElement("button");b.className="gallery-filter"+(filter===label?" active":"");b.textContent=label;b.onclick=()=>renderGallery(label);toolbar.append(b)});
+ sharedMedia.append(toolbar);
+ const grid=document.createElement("div");grid.className="gallery-grid";
+ const shown=allFiles.filter(file=>filter==="Todos"||category(file)===filter);
+ if(!shown.length){const empty=document.createElement("p");empty.className="section-lead";empty.textContent=allFiles.length?"No hay archivos en esta categoría.":"Próximamente compartiremos fotografías y material del proyecto.";sharedMedia.append(empty);return}
+ shown.forEach(file=>grid.append(createMediaCard(file)));
+ sharedMedia.append(grid);
+}
 async function refreshFiles(){
- const data=await api("/api/files");fileList.innerHTML="";sharedMedia.innerHTML="";
- data.files.sort((a,b)=>new Date(b.uploadedAt)-new Date(a.uploadedAt)).forEach(file=>{
+ const data=await api("/api/files");allFiles=(data.files||[]).sort((a,b)=>new Date(b.uploadedAt)-new Date(a.uploadedAt));
+ fileList.innerHTML="";
+ allFiles.forEach(file=>{
   const item=document.createElement("div");item.className="file-item";
-  const a=document.createElement("a");a.href=file.url;a.target="_blank";a.rel="noopener";a.textContent=file.pathname.split("/").pop();
-  const meta=document.createElement("div");meta.textContent=(file.contentType||"Archivo")+" · "+niceSize(file.size);
-  const del=document.createElement("button");del.textContent="Eliminar";del.onclick=async()=>{if(confirm("¿Eliminar permanentemente este archivo?")){try{await api("/api/files",{method:"DELETE",body:JSON.stringify({url:file.url})});await refreshFiles()}catch(e){alert(e.message)}}};
-  item.append(a,meta,del);fileList.append(item);
-  const card=document.createElement("article");card.className="gallery-card";
-  if((file.contentType||"").startsWith("image/")){const img=document.createElement("img");img.src=file.url;img.alt="Material del proyecto Los Portales de Cajaruro";card.append(img)}
-  else {const placeholder=document.createElement("div");placeholder.style.cssText="padding:35px 18px;font-size:38px;text-align:center;background:#10294b";placeholder.textContent=(file.contentType||"").startsWith("video/")?"▶️":"📄";card.append(placeholder)}
-  const caption=document.createElement("div");const link=document.createElement("a");link.href=file.url;link.target="_blank";link.rel="noopener";link.textContent=file.pathname.split("/").pop();caption.append(link);card.append(caption);sharedMedia.append(card);
+  const a=document.createElement("a");a.href=file.url;a.target="_blank";a.rel="noopener";a.textContent=fileName(file);
+  const meta=document.createElement("span");meta.className="file-meta";meta.textContent=category(file)+" · "+niceSize(file.size);
+  const replace=document.createElement("button");replace.textContent="Reemplazar";replace.onclick=()=>{const picker=document.createElement("input");picker.type="file";picker.accept="image/*,video/*,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx";picker.onchange=async()=>{const replacement=picker.files?.[0];if(!replacement)return;replace.disabled=true;replace.textContent="Subiendo...";try{const {upload}=await import("https://esm.sh/@vercel/blob@2.0.0/client");await upload(replacement.name,replacement,{access:"public",handleUploadUrl:"/api/upload"});await api("/api/files",{method:"DELETE",body:JSON.stringify({url:file.url})});message.textContent="Archivo reemplazado correctamente.";await refreshFiles()}catch(e){message.textContent="No se pudo reemplazar: "+e.message;replace.disabled=false;replace.textContent="Reemplazar"}};picker.click()};
+  const del=document.createElement("button");del.textContent="Eliminar";del.onclick=async()=>{if(confirm("¿Eliminar permanentemente este archivo?")){try{await api("/api/files",{method:"DELETE",body:JSON.stringify({url:file.url})});message.textContent="Archivo eliminado.";await refreshFiles()}catch(e){alert(e.message)}}};
+  item.append(a,meta,replace,del);fileList.append(item);
  });
+ renderGallery("Todos");
 }
 loginForm.addEventListener("submit",async e=>{e.preventDefault();message.textContent="Verificando acceso...";try{await api("/api/admin-login",{method:"POST",body:JSON.stringify({password:document.getElementById("adminPassword").value})});loginForm.style.display="none";tools.style.display="block";message.textContent="Sesión iniciada.";await refreshFiles()}catch(err){message.textContent=err.message}});
 document.getElementById("adminLogout").addEventListener("click",async()=>{await api("/api/admin-logout",{method:"POST"});tools.style.display="none";loginForm.style.display="flex";message.textContent="Sesión cerrada."});
@@ -76,6 +119,7 @@ document.getElementById("uploadBtn").addEventListener("click",async()=>{
  catch(err){message.textContent="No se pudo subir: "+err.message}
  finally{btn.disabled=false;btn.textContent="Subir archivos"}
 });
-async function renderPublicFiles(){try{const data=await api("/api/files");sharedMedia.innerHTML="";if(!data.files.length){sharedMedia.innerHTML="<p class=\"section-lead\">Próximamente compartiremos fotografías y material del proyecto.</p>";return}data.files.forEach(file=>{const card=document.createElement("article");card.className="gallery-card";const type=file.contentType||"";if(type.startsWith("image/")){const img=document.createElement("img");img.src=file.url;img.alt="Fotografía del proyecto Los Portales de Cajaruro";img.loading="lazy";card.append(img)}else if(type.startsWith("video/")){const video=document.createElement("video");video.src=file.url;video.controls=true;video.preload="metadata";video.style.cssText="width:100%;height:260px;object-fit:cover;border-radius:14px";card.append(video)}else{const p=document.createElement("div");p.style.cssText="padding:35px;text-align:center;font-size:34px;background:#10294b";p.textContent="📄";card.append(p)}const c=document.createElement("div"),a=document.createElement("a");a.href=file.url;a.target="_blank";a.rel="noopener";a.textContent=type.startsWith("image/")?"Ver fotografía":type.startsWith("video/")?"Abrir video":"Ver documento";c.append(a);card.append(c);sharedMedia.append(card)})}catch(e){sharedMedia.innerHTML="<p class=\"section-lead\">No se pudo cargar la galería en este momento.</p>";console.error(e)}}renderPublicFiles();
+async function renderPublicFiles(){try{const data=await api("/api/files");allFiles=(data.files||[]).sort((a,b)=>new Date(b.uploadedAt)-new Date(a.uploadedAt));renderGallery("Todos")}catch(e){sharedMedia.innerHTML="<p class=\\"section-lead\\">No se pudo cargar la galería en este momento.</p>";console.error(e)}}
+renderPublicFiles();
 </script>
 </body></html>
