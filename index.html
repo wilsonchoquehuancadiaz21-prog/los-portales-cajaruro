@@ -125,7 +125,7 @@ async function renderPublicFiles(){try{
  const heroVideo=document.getElementById("heroVideo");
  const videoFile=allFiles.find(file=>(file.contentType||"").startsWith("video/")||/\\.(mp4|webm|ogg|mov)$/i.test(file.pathname||""));
  if(videoFile&&heroVideo){heroVideo.src=videoFile.url;heroVideo.style.display="block";heroVideo.load();heroVideo.play().catch(()=>{});}
- }catch(e){sharedMedia.innerHTML="<p class=\\"section-lead\\">No se pudo cargar la galería en este momento.</p>";console.error(e)}}
+ }catch(e){sharedMedia.textContent="No se pudo cargar la galería en este momento.";console.error(e)}}
 renderPublicFiles();
 </script>
 </body></html>
