@@ -5,7 +5,6 @@ export default async function handler(req,res) {
     try {
       const result=await list({limit:1000});
       const files=result.blobs
-        .filter(file=>file.pathname.startsWith("uploads/"))
         .map(({url,pathname,size,uploadedAt,contentType})=>({url,pathname,size,uploadedAt,contentType}));
       return res.status(200).json({files});
     } catch(e) {
