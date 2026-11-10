@@ -18,8 +18,8 @@ export default async function handler(req,res) {
     try {
       const parsed=new URL(url);
       if(!parsed.hostname.endsWith(".public.blob.vercel-storage.com")) return res.status(400).json({error:"Archivo no válido"});
-      const path=decodeURIComponent(parsed.pathname).replace(/^\/+/, "");
-      if(!path.startsWith("uploads/")) return res.status(400).json({error:"Ruta no permitida"});
+      const stored=await list({limit:1000});
+      if(!stored.blobs.some(blob=>blob.url===url)) return res.status(404).json({error:"El archivo no existe en este almacenamiento"});
       await del(url);
       return res.status(200).json({ok:true});
     } catch(e) {
