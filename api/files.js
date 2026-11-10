@@ -8,9 +8,12 @@ function guessType(path,type) {
 }
 export default async function handler(req,res) {
   if(req.method==="GET") {
+    const adminView=new URL(req.url,"https://local.invalid").searchParams.get("admin")==="1";
+    if(adminView && !isAdmin(req)) return res.status(401).json({error:"No autorizado"});
     try {
       const result=await list({limit:1000});
       const files=result.blobs
+        .filter(blob=>adminView || !/(^|\/)cuenta(?:\.|$)/i.test(String(blob.pathname||"")))
         .map(({url,pathname,size,uploadedAt,contentType})=>({url,pathname,size,uploadedAt,contentType:guessType(pathname,contentType)}));
       return res.status(200).json({files});
     } catch(e) {
